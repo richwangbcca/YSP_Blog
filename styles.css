@@ -1,5 +1,6 @@
 * {
     font-family: "Tahoma";
+    background: snow;
 }
 
 .blog_date {
@@ -7,7 +8,7 @@
 }
 
 .section_header {
-    font-family: "Papyrus";
+    font-family: Copperplate, Courier New;
 }
 
 [a] {
