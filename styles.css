@@ -1,3 +1,15 @@
 * {
     font-family: "Tahoma";
 }
+
+.blog_date {
+    text-transform: uppercase;
+}
+
+.section_header {
+    font-family: "Papyrus";
+}
+
+[href] {
+    color: firebrick;
+}
