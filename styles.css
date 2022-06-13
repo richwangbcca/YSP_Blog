@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -79,7 +83,7 @@ img {
     width: 100%;
   }
   
-  .info a {
+.info a {
     background: red;
     border: 1px solid red;
     border-radius: 3px;
@@ -88,10 +92,10 @@ img {
     margin: 20px;
     padding: 14px;
     text-decoration: none;
-  }
+}
   
-  .info a:hover {
+.info a:hover {
     background: white;
     border: 1px solid red;
     color: red;
-  }
+}
