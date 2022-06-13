@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 .content {
     font-family: Tahoma;
-    background-color: white;
+    line-height: 26px;
     max-width: 600px;
     min-width: 200px;
     margin: 0 auto;
@@ -50,8 +51,23 @@ p {
     color: dimgray;
     font-size: 18px;
     margin: 20px auto;
-    line-height: 26px;
     text-align: justify;
+}
+
+.pictures {
+    margin: 0 auto;
+}
+
+img {
+    width: 45%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pictures p {
+    font-size: 12px;
+    margin: 0;
 }
 
 .info {
