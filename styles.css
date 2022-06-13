@@ -1,14 +1,37 @@
-* {
-    font-family: "Tahoma";
-    background: snow;
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    font-family: Tahoma;
+    background-color: white;
+    max-width: 600px;
+    min-width: 200px;
+    margin: 0 auto;
 }
 
-.blog_date {
-    text-transform: uppercase;
+#large_title {
+    margin: 40px auto;
+    font-size: 40px;
 }
 
 .section_header {
     font-family: Copperplate, Courier New;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    
+}
+
+.blog_date {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 [a] {
@@ -18,3 +41,41 @@
 a:hover {
     color: maroon;
 }
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    color: dimgray;
+    font-size: 18px;
+    margin: 20px auto;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.info {
+    font-family: Tahoma;
+    border: 1px solid LightGrey;
+    padding: 20px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .info a {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .info a:hover {
+    background: white;
+    border: 1px solid red;
+    color: red;
+  }
