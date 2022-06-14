@@ -1,38 +1,75 @@
-* {
-    box-sizing: border-box;
-  }
-
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     background-color: white;
 }
-.content {
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: cover;
+    padding: 0;
+}
+
+.header_image {
+    margin: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.sidebar {
+    position: fixed;
     font-family: Tahoma;
-    line-height: 26px;
-    max-width: 600px;
-    min-width: 200px;
+    color: dimgray;
+    line-height: 30px;
+    margin: 0 25px;
+    margin-top: 0px;
+    border: 1px solid dimgray;
+    padding: 0 20px;
+    z-index: 10;
+    
+}
+#sidebar_header{
+    text-align: center;
+}
+
+.content {
+    background-color: white;
     margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    top: 125px;
+    box-sizing: border-box;
+    
 }
 
 #large_title {
-    margin: 40px auto;
-    font-size: 40px;
+    font-family: Copperplate;
+    text-align: center;
+    margin: 250px auto 125px auto;
+    font-size: 60px;
+    color: whitesmoke;
+    z-index: 10;
+    position: sticky;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
 .section_header {
     font-family: Copperplate, Courier New;
-    text-align: center;
     border-bottom: 1px solid black;
-    margin: 50px auto;
+    margin: auto;
     margin-bottom: 20px;
-    
+    text-align: center;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .blog_date {
+    font-family: Tahoma;
     text-transform: uppercase;
-    font-size: 20px;
     text-align: center;
+    font-size: 20px;
     margin-top: 50px;
     margin-bottom: 15px;
     margin-left: auto;
@@ -52,10 +89,14 @@ h2 {
 }
 
 p {
+    font-family: Tahoma;
+    line-height: 26px;
     color: dimgray;
     font-size: 18px;
     margin: 20px auto;
     text-align: justify;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .pictures {
@@ -77,7 +118,9 @@ img {
 .info {
     font-family: Tahoma;
     border: 1px solid LightGrey;
+    background: white;
     padding: 20px 0px;
+    padding-bottom: 50px;
     position: relative;
     text-align: center;
     width: 100%;
