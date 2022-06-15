@@ -2,20 +2,24 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
-        <title>Richard's YSP Blog</title>
         <link href = "./styles.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+        <title>Richard's YSP Blog</title>
     </head>
 
     <body>
-        <h1 id = "main_title">Richard's YSP Blog</h1>
         <header>
-            <img class = "header_image" src = "./images/Header-Image.JPG" alt = "Two electrochemical oxidation reactions">
+            <a href = "https://github.com/RWang95"><img src = "./images/GitHub-Logo.png"></a>
+            <p>Richard's Website</p>
         </header>
 
-        <div class = "sidebar">
-            <img src = "./images/YSP-Logo.png" alt = "YSP Logo">
-            <p id = "sidebar_header">Sections</p>
-            <ul class = "page_link">
+        <h1 class = "main-title">Richard's YSP Blog</h1>
+
+        <img class = "banner" src = "./images/Header-Image.JPG">
+        
+        <div class = "index-page">
+            <ul class = "sidebar">
+                <li id = "sidebar-title">Navigate</li>
                 <li><a href = "./index.html#summary">Summary</a></li>
                 <li><a href = "./index.html#june6">June 6, 2022</a></li>
                 <li><a href = "./index.html#june7">June 7, 2022</a></li>
@@ -42,62 +46,56 @@
                 <li><a href = #>July 14, 2022</a></li>
                 <li><a href = #>July 15, 2022</a></li>
             </ul>
-        </div>
 
-        <div class = "content" id = "main_page">
-            <div id = "summary">
-                    <p class = "summary_content page_link">
-                        The <a href="https://www.caes.uga.edu/students/prospective-students/youth-high-school-programs/young-scholars.html">Young Scholars Program (YSP)</a> is a paid six-week summer internship program for high school students interested in agricultural, food, and environmental sciences. Selected students work 30 hours per week actively engaged in research under the guidance of a faculty mentor on the UGA Athens, Griffin or Tifton campus. During the program, students attend workshops and visit agricultural operations to gain exposure to the various fields of study and careers in agriculture.
+            <div class = "content">
+                <div class = "summary">
+                    <p>
+                        "The <a href="https://www.caes.uga.edu/students/prospective-students/youth-high-school-programs/young-scholars.html">Young Scholars Program (YSP)</a> is a paid six-week summer internship program for high school students interested in agricultural, food, and environmental sciences. Selected students work 30 hours per week actively engaged in research under the guidance of a faculty mentor on the UGA Athens, Griffin or Tifton campus. During the program, students attend workshops and visit agricultural operations to gain exposure to the various fields of study and careers in agriculture."
                     </p>
 
-                    <p class = "summary_content page_link">
+                    <p>
                         I worked under <a href=https://site.caes.uga.edu/huanglab>Dr. Jack Huang at UGA Griffin</a> to evaluate various methods of degrading PFAs, or perfluoroalkyl substances. PFAs are synthetic compounds containing fluorine atoms bonded to a chain of carbon atoms. They are described as persistant organic pollutants, which do not degrade naturally. PFAs are commonly found in fire extinguishing foams, water repellants, shampoos, and cosmetics. It is also found in Teflon, a common material developed by DuPont, and the subject of the 2019 movie <em>Dark Waters</em>. Over time, PFAs can build up in people's  bodies, especially in firefighters, chemical manufacturers, and processing workers. The chemical can also build up in people  who drink PFA-contaminated water, eat contaminated fish, inhale contaminated soil or air, and use products packaged in PFAs. PFA exposure leads to a wide variety of health problems, such as decreased fertility, developmental delays in children, increased risk of cancer, compromised immune system and vaccine response, hormone interference, increased cholesterol levels, and birth defects. Because of its persistancy and health effects, much research has been done to find ways to degrade PFAs.
                     </p>
+                </div>
+
+                <div class = "blog">
+                    <h2 class = "blog-header">Blog</h2>
+                    <div class = "blog-post">
+                        <h3 class = "blog-date"><a id = "june6">June 6, 2022</a></h3>
+                        <p class = "blog-body">
+                            The method of PFA degradation I will try is called <strong>electrochemical oxidation</strong>. When the PFAs are in the electrolyte solution in an electrolytic cell, the fluorine atoms are ripped off of the carbon chain, degrading the PFAs. I started with stoichiometry to determine how many mL of certain PFAs I need for 50 mL of a 2uM solution. I then determined the mass of the Na2SO4 needed to put in the solution. The Na2SO4 dissolves in the solution, forming ions that allow electrons to pass through the solution. Then, using the area of an SiC anode, I determined many mA of electricity I needed to run through the solution.
+                        </p>
+                        <p class = "blog-body">
+                            Using a stainless steel cathode and an SiC anode, I created an electrolytic cell that would oxidize and degrade the PFAs. In the process, I learned how to use a precision pipette and a magnetic stirrer. I collected samples from the solution every 30 minutes. Tomorrow, I will run them in the UPLC-MS/MS. The UPLC-MS/MS uses liquid chromatography to separate the solution and mass spectrometry to analyze the mass. By determining the amount of remaining PFA, I can see the effectiveness of the new SiC anode.
+                        </p>
+                        <p class = "page-link"><a href = ./pages/pfosexperiment.html>Click here to access experiment details.</a></p>
+                    </div>
+                        
+                    <div class = "blog-post">
+                        <h3 class = "blog-date"><a id = "june7">June 7, 2022</a></h3>
+                        <p class = "blog-body">
+                            First, I used the UPLC-MS/MS to create chromatograms of the PFOs and M8PFOs concentrations to determine how much was degraded. The results were not promising, and I realized later that the vortex mixer did not completely mix the contents inside the vial insert. I redid the experiment, but this time I did not use the insets, and I took samples every hour and doubled the amperage from 8mA to 16mA. Around hour 4, foam started forming in the solution. This foam was from the electrolysis of water in the solution, forming hydrogen and oxygen bubbles. The foam needed to disappear before the samples were taken, either by just waiting for them to disappear or taking out the cathode and the anode to prevent the bubbles from clinging on.
+                        </p>
+                        <p class = "page-link"><a href=./pages/UPLCMSMS.html>Click here for more information about UPLC-MS/MS.</a></p>
+                    </div>
+    
+                    <div class = "blog-post">
+                        <h3 class = "blog-date"><a id = "june8">June 8, 2022</a></h3>
+                        <p class = "blog-body">
+                            I continued to run the electrochemical oxidation of the PFOs sample using the SiC anode, taking samples every hour. Around 60% of the PFOs remained at hour 7. According to my supervisor, this anode was not as effective as some of the ones his lab has tested in the past. Overnight, I will let the cathode and anode sit in the solution in the same position, but without any electricity running to see if the anode is actually degrading the PFAs or if it is absorbing them.
+                        </p>
+                    </div>
+    
+                    <div class = "blog-post">
+                        <h3 class = "blog-date"><a id = "june9">June 9, 2022</a></h3>
+                        <p class = "blog-body">
+                            After testing the absorption of PFOs overnight for 14 hours, I found that 40% of the PFOs were absorbed by the anode, meaning the electrochemical oxidation did not degrade the PFOs almost at all. Next, I will start a new experiment today. I will run a TiO2 anode and an SiC anoode under a powerful mercury vapor lamp. The mercury vapor lamp emits light in all three of the visible, ultraviolet, and infrared spectral regions. I will see if the light has any effect on PFA degradation. It is possible since the light can give the molecules more energy to break the C-F bonds. It will also increase the temperature of the solutions, also giving the molecules more energy. I will take samples from both solutions and measure the potential difference every hour. 
+                        </p>
+                        <p class = "page-link"><a href = ./pages/mercurylampexperiment.html>Click here to access experiment details.</a></p>
+                    </div>
+                </div>
+
             </div>
-
-        <h2 class = "section_header">Blog</h2>
-            <div class = "blog">
-                <div class = "blog_post">
-                    <h3 class = "blog_date"><a id = "june6">June 6, 2022</a></h3>
-                    <p class = "blog_body">
-                        The method of PFA degradation I will try today is called <strong>electrochemical oxidation</strong>. When the PFAs are in the electrolyte solution in an electrolytic cell, the fluorine atoms are ripped off of the carbon chain, degrading the PFAs. I started with stoichiometry to determine how many mL of certain PFAs I need for 50 mL of a 2uM solution. I then determined the mass of the Na2SO4 needed to put in the solution. The Na2SO4 dissolves in the solution, forming ions that allow electrons to pass through the solution. Then, using the area of an SiC anode, I determined many mA of electricity I needed to run through the solution.
-                    </p>
-                    <p class = "blog_body">
-                        Using a stainless steel cathode and an SiC anode, I created an electrolytic cell that would oxidize and degrade the PFAs. In the process, I learned how to use a precision pipette and a magnetic stirrer. I collected samples from the solution every 30 minutes. Tomorrow, I will run them in the UPLC-MS/MS. The UPLC-MS/MS uses liquid chromatography to separate the solution and mass spectrometry to analyze the mass. By determining the amount of remaining PFA, I can see the effectiveness of the new SiC anode.
-                    </p>
-                    <p class = "page_link"><a href = ./pages/pfosexperiment.html>Click here to access experiment details.</a></p>
-                </div>
-                    
-                <div class = "blog_post">
-                    <h3 class = "blog_date"><a id = "june7">June 7, 2022</a></h3>
-                    <p class = "blog_body">
-                        First, I used the UPLC-MS/MS to create chromatograms of the PFOs and M8PFOs concentrations to determine how much was degraded. The results were not promising, and I realized later that the vortex mixer did not completely mix the contents inside the vial insert. I redid the experiment, but this time I did not use the insets, and I took samples every hour and doubled the amperage from 8mA to 16mA. Around hour 4, foam started forming in the solution. This foam was from the electrolysis of water in the solution, forming hydrogen and oxygen bubbles. The foam needed to disappear before the samples were taken, either by just waiting for them to disappear or taking out the cathode and the anode to prevent the bubbles from clinging on.
-                    </p>
-                    <p class = "page_link"><a href=./pages/UPLCMSMS.html>Click here for more information about UPLC-MS/MS.</a></p>
-                </div>
-
-                <div class = "blog_post">
-                    <h3 class = "blog_date"><a id = "june8">June 8, 2022</a></h3>
-                    <p class = "blog_body">
-                        I continued to run the electrochemical oxidation of the PFOs sample using the SiC anode, taking samples every hour. Around 60% of the PFOs remained at hour 7. According to my supervisor, this anode was not as effective as some of the ones his lab has tested in the past. Overnight, I will let the cathode and anode sit in the solution in the same position, but without any electricity running to see if the anode is actually degrading the PFAs or if it is absorbing them.
-                    </p>
-                </div>
-
-                <div class = "blog_post">
-                    <h3 class = "blog_date"><a id = "june9">June 9, 2022</a></h3>
-                    <p class = "blog_body">
-                        After testing the absorption of PFOs overnight for 14 hours, I found that 40% of the PFOs were absorbed by the anode, meaning the electrochemical oxidation did not degrade the PFOs almost at all. Next, I will start a new experiment today. I will run a TiO2 anode and an SiC anoode under a powerful mercury vapor lamp. The mercury vapor lamp emits light in all three of the visible, ultraviolet, and infrared spectral regions. I will see if the light has any effect on PFA degradation. It is possible since the light can give the molecules more energy to break the C-F bonds. It will also increase the temperature of the solutions, also giving the molecules more energy. I will take samples from both solutions and measure the potential difference every hour. 
-                    </p>
-                    <p class = "page_link"><a href = ./pages/mercurylampexperiment.html>Click here to access experiment details.</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div class="info">
-            <a href="https://github.com/RWang95"><img src = "./images/GitHub-Logo.png"></a>
-            <a href="#"><img src = "./images/LinkedIn-Logo.png"></a>
-            <a href="#"><img src = "./images/Twitter-Logo.png"></a>
-          </div>
+        </div> 
     </body>
 </html>
