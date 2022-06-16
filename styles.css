@@ -19,7 +19,6 @@ header {
 
 header img {
     height: 90%;
-    width: auto;
     margin-left: 2%;
     padding: 10px;
     overflow: hidden;
@@ -30,7 +29,6 @@ header p {
 }
 
 .banner {
-    z-index: 0;
     position: fixed;
     max-width: 100%;
     max-height: 100%;
@@ -77,16 +75,15 @@ header p {
     background-color: white;
 }
 
-.sidebar li{
+.sidebar {
     margin-left: 3rem;
-    overflow: hidden;
 }
 
 li {
     line-height: 30px;
 }
 
-a{
+a {
     color: firebrick;
 }
 
@@ -107,7 +104,7 @@ a{
     right: 60px;
 }
 
-.content p {
+p {
     margin-bottom: 20px;
     line-height: 30px;
     font-size: 16px;
@@ -138,4 +135,13 @@ h2 {
     text-align: center;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
+}
+
+.pictures {
+    margin-top: 20px;
+}
+
+.caption {
+    font-size: 14px;
+    line-height: 20px;
 }
