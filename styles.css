@@ -21,12 +21,11 @@ header img {
     height: 100%;
     float: left;
     padding: 10px;
-    overflow: visible;
 }
 
 header p {
-    margin-top: 1.5%;
-    overflow: visible;
+    margin-top: 2%;
+    position: relative;
 }
 
 .banner {
@@ -105,7 +104,7 @@ a {
     right: 60px;
 }
 
-p {
+.content p {
     margin-bottom: 20px;
     line-height: 30px;
     font-size: 16px;
