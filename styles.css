@@ -113,6 +113,11 @@ a{
     font-size: 16px;
 }
 
+.blog-post img {
+    max-height: 250px;
+}
+
+
 h2 {
     font-family: Copperplate;
     text-align: center;
